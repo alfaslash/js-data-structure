@@ -1,0 +1,25 @@
+{
+  "name": "js-data-structure",
+  "version": "1.0.0",
+  "description": "Data structure in JS.",
+  "main": "index.js",
+  "config": {
+    "jest": "./node_modules/.bin/jest"
+  },
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [
+    "data",
+    "structure",
+    "queue",
+    "tree",
+    "stack",
+    "list",
+    "graph"
+  ],
+  "devDependencies": {
+  },
+  "author": "alfaslash (Artem Roshko)",
+  "license": "MIT"
+}
