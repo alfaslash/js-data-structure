@@ -1,27 +1,24 @@
-export class Stack {
-	constructor() {
-		super();
+// @flow
+export class Stack<T> {
+	stack: Array<T> = []
 
-		this.stack = [];
+	push(el: T) {
+		this.stack.push(el);
 	}
 
-	push() {
-		this.stack.push();
-	}
-
-	pop() {
+	pop(): T {
 		return this.stack.pop();
 	}
 
-	peek() {
+	peek(): T {
 		return this.stack[this.size - 1];
 	}
 
-	get size() {
+	get size(): number {
 		return this.stack.length;
 	}
 
-	isEmpty() {
+	isEmpty(): boolean {
 		return this.size === 0;
 	}
 }

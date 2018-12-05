@@ -1,27 +1,24 @@
-export class Queue {
-	constructor() {
-		super();
+// @flow
+export class Queue<T> {
+	queue: Array<T> = []
 
-		this.queue = [];
+	enqueue(el: T): void {
+		this.queue.unshift(el);
 	}
 
-	enqueue(el) {
-		this.enqueue = el;
-	}
-
-	dequeue() {
+	dequeue(): T {
 		return this.queue.pop();
 	}
 
-	peek() {
+	peek(): T {
 		return this.queue[this.size - 1];
 	}
 
-	get size() {
+	get size(): number {
 		return this.queue.length;
 	}
 
-	isEmpty() {
+	isEmpty(): boolean {
 		return this.size === 0;
 	}
 }
